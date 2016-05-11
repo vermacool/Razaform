@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.sked.testapplication.FormActivity">
+    <!--Write complete Class name including the package name-->
+    <com.sked.razaform.view.CircularImageView
+        android:id="@+id/image"
+        android:layout_width="163dp"
+        android:layout_height="178dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/camera_analog"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="UserName:"
+        android:inputType="text" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="MobileNo:"
+        android:inputType="phone" />
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/email"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignRight="@+id/email"
+        android:layout_gravity="center"
+        android:text="Submit" />
+
+
+</LinearLayout>
+
